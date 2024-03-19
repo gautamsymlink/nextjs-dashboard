@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-export default function Page() {
-  const router = useRouter();
-  return <p>Post: {router.query.slug}</p>;
+export default function Page({params}) {
+
+  return <p>Post: {JSON.stringify(params)}</p>;
 }
